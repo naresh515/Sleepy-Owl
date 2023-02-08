@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -83,7 +84,6 @@ button.dropbtn {
     margin-left: -3px;
 }
 
-
 #btn1 {
     background: white;
     font-size: 15px;
@@ -113,21 +113,23 @@ button.dropbtn {
     position: absolute;
     border-radius: 5px;
     padding: 25px 40px 25px 30px;
-    width: 250px;
-    right: 70px;
+    width: 300px;
+    right: 180px;
     top: 70px;
     background-color: #EDEFF2;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 #cart img {
     width: 25%;
-    padding: 0px 15px;
+    padding: 0px 20px 0px 10px;
 }
 
 .first_contant {
     background-color: white;
-    margin-bottom: 20px;
     padding: 5px;
+    display: flex;
 }
 
 .input {
@@ -141,6 +143,8 @@ button.dropbtn {
 .butto {
     display: flex;
     justify-content: flex-end;
+    background-color: white;
+    padding: 5px;
 }
 
 .minus,
@@ -154,7 +158,8 @@ button.dropbtn {
 }
 
 #cart p {
-    padding: 0px 15px;
+    font-size: 13px;
+    letter-spacing: 0.02rem;
 }
 
 .middle_contant {
@@ -179,6 +184,14 @@ button.dropbtn {
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0px;
+}
+
+.overlay {
+    background-color: red !important;
+}
+
+.blur-container {
+    backdrop-filter: blur(18px);
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -280,6 +293,7 @@ button.dropbtn {
     padding: 15px 50px 15px 45px;
     border-radius: 5px;
     bottom: 50px;
+    cursor: pointer;
 }
 
 .head2 h4 {
@@ -304,6 +318,7 @@ button.dropbtn {
     color: white;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .yes img {
@@ -331,6 +346,7 @@ button.dropbtn {
     padding: 15px 25px 17px 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .text3 {
@@ -360,6 +376,7 @@ button.dropbtn {
     color: #408AD1 !important;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .text4 {
@@ -404,6 +421,7 @@ button.dropbtn {
     letter-spacing: -0.02em;
     background-color: #652100;
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+    cursor: pointer;
 }
 
 .text6 {
@@ -430,6 +448,7 @@ button.dropbtn {
 
 .text6 button {
     padding: 16px 30px;
+    cursor: pointer;
 }
 
 .text7 {
@@ -454,6 +473,7 @@ button.dropbtn {
     background-color: #253b52;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .head {
@@ -1117,7 +1137,7 @@ ul.tabs li.current {
 
 .img img {
     max-width: 100%;
-    padding: 40px 6px 0px 21px;
+    padding: 40px 6px 0px 20px;
 }
 
 .top .img img {
