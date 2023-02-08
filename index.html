@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./style.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <title>Buy Premium Instant Coffee Powder Online | 100% Arabica | Sleepy Owl - Sleepy Owl Coffee
@@ -23,32 +16,30 @@
 <body>
     <div class="container">
         <div id="nav_bar" class="navbar">
-            <div class="main_nav">
-                <div class="logo">
-                    <img src="./Img/Logo.avif" class="logo">
-                </div>
-                <div class="dropdown">
-                    <button class="bu"></button>
-                    <button class="dropbtn">Shop
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+            <div class="logo">
+                <img src="./Img/Logo.avif" class="logo">
+            </div>
+            <div class="dropdown">
+                <button class="bu"></button>
+                <button class="dropbtn">Shop
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
 
-                    </div>
                 </div>
-                <div class="one">
-                    <p>SUBSCRIBE & SAVE<label class="kits_label_new">New</label></p>
-                </div>
-                <div class="two">
-                    <img src="./Img/download.png">
-                    <p>INSTANT COFFEE</p>
-                </div>
-                <div class="three">
-                    <p>BESTSELLERS</p>
-                </div>
-                <div class="four">
-                    <p>BULK ORDERS</p>
-                </div>
+            </div>
+            <div class="one">
+                <p>SUBSCRIBE & SAVE<label class="kits_label_new">New</label></p>
+            </div>
+            <div class="two">
+                <img src="./Img/download.png">
+                <p>INSTANT COFFEE</p>
+            </div>
+            <div class="three">
+                <p>BESTSELLERS</p>
+            </div>
+            <div class="four">
+                <p>BULK ORDERS</p>
             </div>
             <div class="left_nav">
                 <div class="five">
@@ -57,23 +48,32 @@
                 <div class="six">
                     <button id="btn"> <img src="./cart.svg"></button>
                     <button id="btn1"> <img src="./cross.svg"></button>
+                    <div id="cart">
+                        <div class="first_contant">
+                            <img src="./Img/Hazelnut_PIK_Yellowmug_1080x.webp">
+                            <p>Premium Instant Kit Hazelnut<br> <i
+                                    class="fa-solid fa-indian-rupee-sign"></i><span>1,585</span></p>
+                            <div class="butto">
+                                <button ype="button" class="inside">-</button>
+                                <input type="text" class="input" placeholder="1">
+                                <button type="button" class="inside">+</button>
+                            </div>
+                        </div>
+                        <div class="middle_contant">
+                            <p>You’ll love these too—</p>
+                        </div>
+                        <div class="last_contant">
+                            <div class="first_last">Chackout</div>
+                            <div class="last_last"><i class="fa-solid fa-indian-rupee-sign"></i><span>1585</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <script>
-                $(document).ready(function () {
-                    $("#btn").click(function () {
-                        $(this).parent(".six").find("#btn1").slideToggle();
-                    });
-                    $("#btn1").click(function () {
-                        $(this).parent(".six").find("#btn1").slideToggle();
-                    });
-                })
-            </script>
         </div>
         <div class="header">
             <div class="slider_container">
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
                         <div class="head1">
                             <img src="./Img/Hero_Instant_website.webp">
                             <button type="submit" class="button1">SHOP INSTANT COFFEE</button>
@@ -81,96 +81,84 @@
                     </div>
                 </div>
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
                         <div class="head2">
                             <img src="./Img/Hero_Web_2-min.webp">
-                            <div class="text34">
-                                <p>BACK IN STOCK</p>
-                                <h4>Premium instant kit</h4>
-                                <button type="submit" class="button2">SHOP</button>
-                            </div>
+                        </div>
+                        <div class="text34">
+                            <p>BACK IN STOCK</p>
+                            <h4>Premium instant kit</h4>
+                            <button type="submit" class="button2">SHOP</button>
                         </div>
                     </div>
                 </div>
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
                         <div class="head3">
-                            <div class="yes">
-                                <img src="./Img/ULTIMATE.avif">
-                                <div class="text1">
-                                    <h4>Creamy & Bold</h4>
-                                    <h4>Cold Coffee</h4>
-                                    <button type="submit" class="button3">SHOP COLD COFFEE</button>
-                                </div>
-                            </div>
                             <img src="./Img/Cold_Coffee_Kit_Desktop_D1_2_-min.webp">
                         </div>
+                        <div class="yes">
+                            <div class="text1">
+                                <img src="./Img/ULTIMATE.avif">
+                                <h4>Creamy & Bold</h4>
+                                <h4>Cold Coffee</h4>
+                                <button type="submit" class="button3">SHOP COLD COFFEE</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
                         <div class="head4">
-                            <div class="text3">
-                                <p><i>introducing</i></p>
-                                <h4>COLD COFFEE KIT</h4>
-                                <button type="submit" class="button4">SHOP NOW</button>
-                            </div>
                             <img src="./Img/Cold_Coffee_Kit_Desktop_D1-min.webp">
                         </div>
+                        <div class="text3">
+                            <p><i>introducing</i></p>
+                            <h4>COLD COFFEE KIT</h4>
+                            <button type="submit" class="button4">SHOP NOW</button>
+                        </div>
                     </div>
                 </div>
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
                         <div class="head5">
-                            <div class="text4">
-                                <p>COLD BREW</p>
-                                <h4>Take A Trip Around</h4>
-                                <h5>The World</h5>
-                                <button type="submit" class="button5">TRY NEW FLAVOURS</button>
-                            </div>
                             <img src="./Img/CB_Web_1.webp">
                         </div>
-                    </div>
-                </div>
-                <div class="head slider">
-                    <div class="d-flex">
-                        <div class="head6">
-                            <div class="text6">
-                                <p>MUST HAVE</p>
-                                <h4>COLD BREW</h4>
-                                <h5>STARTER KIT</h5>
-                                <button class="button6" type="submit">SHOP KIT</button>
-                            </div>
-                            <img src="./Img/HeroImage_2-min.webp">
+                        <div class="text4">
+                            <p>COLD BREW</p>
+                            <h4>Take A Trip Around</h4>
+                            <h5>The World</h5>
+                            <button type="submit" class="button5">TRY NEW FLAVOURS</button>
                         </div>
                     </div>
                 </div>
                 <div class="head slider">
-                    <div class="d-flex">
+                    <div class="d-flex position">
+                        <div class="head6">
+                            <img src="./Img/HeroImage_2-min.webp">
+                        </div>
+                        <div class="text6">
+                            <p>MUST HAVE</p>
+                            <h4>COLD BREW</h4>
+                            <h5>STARTER KIT</h5>
+                            <button class="button6" type="submit">SHOP KIT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="head slider">
+                    <div class="d-flex position">
                         <div class="head7">
-                            <div class="text7">
-                                <h4>Bonjour</h4>
-                                <h5>Fresh Coffee</h5>
-                                <button class="button7" type="submit">SHOP French Press</button>
-                            </div>
-
                             <img src="./Img/French_Press-Desk_1.webp">
+                        </div>
+                        <div class="text7">
+                            <h4>Bonjour</h4>
+                            <h5>Fresh Coffee</h5>
+                            <button class="button7" type="submit">SHOP French Press</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script>
-            $('.slider_container').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: true,
-                pauseOnHover: false,
-                mobileFirst: true,
-            });  
-        </script>
         <div class="middle mobile-slider" id="mid">
             <p>AS SEEN ON</p>
             <div class="my">
@@ -180,34 +168,6 @@
                 <h1>GQ</h1>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <!-- <script>
-                    $(".my:not(.slick-initialized)").slick({
-                        infinite: true,
-                        mobileFirst: true,
-                        autoplay: true,
-                        speed: 500,
-                        responsive: [
-                            {
-                                breakpoint: 1024,
-                                settings: "unslick",
-                            },
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 2
-                                }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    slidesToShow: 3
-                                }
-                            }
-                        ]
-                    });
-                </script> -->
         <section>
             <div class="section" id="section">
                 <div class="text">
@@ -501,24 +461,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    $(document).ready(function () {
-
-                        $('ul.tabs li').click(function () {
-                            var tab_id = $(this).attr('data-tab');
-
-                            $('ul.tabs li').removeClass('current');
-                            $('.tab-content').removeClass('current');
-
-                            $(this).addClass('current');
-                            $("#" + tab_id).addClass('current');
-                        })
-                        $(".button11").click(function () {
-                            alert("item add Succefully");
-                        });
-
-                    })
-                </script>
                 <div class="top">
                     <div class="text5">
                         <p><strong>WAIT, THERE'S MORE</strong></p>
@@ -743,19 +685,6 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            $(document).ready(function () {
-                $(".accordin-item").click(function () {
-                    $(this).parent(".accoridan").find(".main").slideToggle();
-                    $(this).parent(".accoridan").find(".accordin-item").slideUp();
-                });
-                $(".main").click(function () {
-                    $(this).parent(".accoridan").find(".main").slideToggle();
-                    $(this).parent(".accoridan").find(".accordin-item").slideDown();
-                });
-            })
-        </script>
         <footer>
             <div class="footer">
                 <div class="firstfoot">
@@ -822,7 +751,13 @@
             </a>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./style.js"></script>
 </body>
 
 </html>

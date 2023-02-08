@@ -105,10 +105,81 @@ button.dropbtn {
     display: flex;
 }
 
+#cart {
+    display: none;
+    border-top: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 25px 40px 25px 30px;
+    width: 250px;
+    right: 70px;
+    top: 70px;
+    background-color: #EDEFF2;
+}
+
+#cart img {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.first_contant {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 0px !important;
+    width: 25px !important;
+    text-align: center;
+    border: 1px solid #D4E5FF;
+    border-radius: 4px;
+}
+
+.butto {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inside {
+    border-radius: 4px;
+    color: blue;
+    border: 1px solid #D4E5FF;
+    font-size: 20px;
+}
+
+#cart p {
+    padding: 0px 15px;
+}
+
+.middle_contant {
+    background: linear-gradient(180deg, #F5F7FA 0%, rgba(245, 247, 250, 0) 100%);
+    margin-bottom: 10px;
+    border-radius: 8px 0px 0px 0px;
+    padding: 16px 16px 8px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E7B8F;
+}
+
+.last_contant {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    box-shadow: 0px -4px 8px rgb(66 141 253 / 20%);
+    border-radius: 0 0 4px 4px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
 @media screen and (min-width: 300px) and (max-width: 1000px) {
 
     .navbar {
-        position: fixed;
+        position: sticky;
         z-index: 1;
         background-color: white;
         width: 100%;
@@ -116,11 +187,9 @@ button.dropbtn {
         padding: 0px;
         display: flex;
         top: 0px;
-    }
-
-    .main_nav {
-        display: flex;
-        flex-direction: row-reverse;
+        margin: auto;
+        gap: 0px;
+        justify-content: space-between;
     }
 
     .navbar .one,
@@ -131,13 +200,14 @@ button.dropbtn {
     }
 
     .logo {
+        display: flex;
         margin: auto;
         padding: 0px;
+        order: 1;
     }
 
     .dropdown {
-        margin: auto;
-        padding: 0px;
+        padding-left: 5px;
     }
 
     button.dropbtn {
@@ -145,35 +215,41 @@ button.dropbtn {
     }
 
     .left_nav {
-        padding-left: 20px;
+        display: flex;
+        order: 1;
     }
+
+    #cart {
+        right: 0;
+        width: 150px;
+    }
+
 }
 
 /*Header */
-.button11 {
-    position: absolute;
-    border-radius: 5px;
-    background: white;
-    color: blue;
-    text-shadow: 1px 0px blue;
-    padding: 10px 15px 10px 15px;
-    margin-left: 302px;
-    border: none;
-    margin-top: 40px;
-    cursor: pointer;
-}
-
 .header img {
     width: 100%;
-    height: 100%;
+    max-width: 100%;
     margin-bottom: -4px;
 }
 
 .text34 {
     position: absolute;
-    top: 30%;
-    left: 9.8%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
 
+.text34 p {
+    font-size: 20px;
+}
+
+.text34 h4 {
+    font-size: 40px;
+}
+
+.position {
+    position: relative;
 }
 
 .head1 {
@@ -197,9 +273,6 @@ button.dropbtn {
 
 .head2 h4 {
     font-size: 50px;
-    margin-left: -160px;
-    margin-top: -15px;
-    margin-bottom: 35px;
     letter-spacing: 0.02em;
     text-shadow: 0 0 0;
     color: #272d4d !important;
@@ -214,7 +287,6 @@ button.dropbtn {
 
 .button2 {
     padding: 15px 45px 15px 35px;
-    margin-top: -86px;
     border: none;
     border-radius: 5px;
     background: #272d4d !important;
@@ -226,76 +298,69 @@ button.dropbtn {
 .yes img {
     width: 100px;
     height: 25px;
-    padding: 100px 40px 0px 625px;
 }
 
 .yes {
     position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .text1 {
-    padding: 0px 0px 0px 550px;
+    padding: 0px;
 }
 
 .text1 h4 {
     font-size: 40px;
     color: #C9142A;
-    margin-top: 15px;
-    margin-bottom: -15px;
 }
 
 .text1 button {
-    margin-top: 30px;
     padding: 15px 25px 17px 20px;
     border: none;
     border-radius: 5px;
-    margin-left: 30px;
 }
 
 .text3 {
     position: absolute;
-    padding: 110px 0px 0px 550px;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .text3 p {
     color: yellow;
     font-size: 35px;
     font-weight: bold;
-    margin-left: 45px;
-    margin-top: 65px;
 }
 
 .text3 h4 {
     color: yellow;
     font-size: 60px;
     font-weight: bold;
-    margin-left: -140px;
-    margin-top: 0px;
-    margin-bottom: 50px;
 }
 
 .button4 {
     padding: 15px 45px 15px 35px;
-    margin-top: -16px;
     border: none;
     border-radius: 5px;
     background: white !important;
     color: #408AD1 !important;
     font-size: 18px;
     font-weight: 700;
-    margin-left: 57px;
 }
 
 .text4 {
     position: absolute;
-    padding: 110px 0px 0px 550px;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .text4 p {
     font-size: 25px;
     font-weight: bold;
-    margin-left: 45px;
-    margin-top: 65px;
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #652100;
@@ -305,9 +370,6 @@ button.dropbtn {
 .text4 h4 {
     font-size: 40px;
     font-weight: bold;
-    margin-left: -55px;
-    margin-top: 0px;
-    margin-bottom: 30px;
     letter-spacing: -0.02em;
     color: #652100;
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
@@ -315,9 +377,6 @@ button.dropbtn {
 
 .text4 h5 {
     font-size: 30px;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    margin-left: 45px;
     letter-spacing: -0.02em;
     color: #652100;
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
@@ -325,14 +384,12 @@ button.dropbtn {
 
 .button5 {
     padding: 15px 15px 12px 10px;
-    margin-top: -15px;
     text-align: center;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 15px;
     font-weight: 700;
-    margin-left: 40px;
     letter-spacing: -0.02em;
     background-color: #652100;
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
@@ -340,7 +397,9 @@ button.dropbtn {
 
 .text6 {
     position: absolute;
-    padding: 140px 0px 0px 630px;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .text6 p {
@@ -351,45 +410,36 @@ button.dropbtn {
 .text6 h4 {
     color: white;
     font-size: 35px;
-    margin-left: -50px;
-    margin-top: 20px;
-    margin-bottom: -40px;
 }
 
 .text6 h5 {
     color: white;
     font-size: 35px;
-    margin-left: -50px;
 }
 
 .text6 button {
     padding: 16px 30px;
-    margin-top: -10px;
 }
 
 .text7 {
     position: absolute;
-    padding: 140px 0px 0px 630px;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .text7 h4 {
     color: #253b52;
     font-size: 59px;
-    margin-top: 70px;
-    margin-bottom: -100px;
-    margin-left: -25px;
 }
 
 .text7 h5 {
     color: #253b52;
     font-size: 56px;
-    margin-left: -76px;
-    margin-bottom: 30px;
 }
 
 .text7 button {
     padding: 16px 50px;
-    margin-left: -45px;
     background-color: #253b52;
     color: white;
     border-radius: 4px;
@@ -426,43 +476,49 @@ button.dropbtn {
 .slider_container .slider {
     margin: 0 auto;
     padding: 0;
-    max-width: 1400px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
-    .header img {
-        width: 60%;
-        margin-left: 0px;
-    }
-
     .text34 {
         position: absolute;
-        margin-top: -365px;
-        margin-left: 282px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .text34 p {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .text34 h4 {
+        font-size: 25px;
+        margin: 0 auto;
     }
 
     .head1 {
         display: block;
+        margin-bottom: -40px;
     }
 
     .button1 {
         position: relative;
-        left: 19%;
         font-size: 10px;
         font-weight: bold;
-        padding: 15px 40px 15px 40px;
+        padding: 8px 10px;
         border: none;
         border-radius: 5px;
+        display: flex;
     }
 
     .head2 h4 {
         font-size: 25px;
-        margin-left: -40px;
-        margin-top: 0px;
-        margin-bottom: 10px;
         letter-spacing: 0.02em;
         text-shadow: 0 0 0;
         color: #272d4d !important;
+        margin: 0 auto;
     }
 
     .head2 p {
@@ -470,11 +526,11 @@ button.dropbtn {
         font-weight: bold;
         text-shadow: 0 0 0;
         color: #272d4d !important;
+        margin: 0 auto;
     }
 
     .button2 {
-        padding: 15px 45px 15px 35px;
-        margin-top: 0px;
+        padding: 8px 15px;
         border: none;
         border-radius: 5px;
         background: #272d4d !important;
@@ -491,6 +547,7 @@ button.dropbtn {
 
     .yes {
         position: absolute;
+        text-align: center;
     }
 
     .text1 {
@@ -501,30 +558,23 @@ button.dropbtn {
     .text1 h4 {
         font-size: 20px;
         color: #C9142A;
-        margin-top: 29px;
-        margin-bottom: 0px;
-        padding-left: 100px;
+        margin: 0 auto;
     }
 
     .text1 button {
-        margin-top: 15px;
-        padding: 8px;
+        padding: 5px;
         border: none;
         border-radius: 5px;
-        margin-left: 259px;
     }
 
     .text3 {
         text-align: center;
-        margin-left: -260px;
     }
 
     .text3 p {
         color: yellow;
         font-size: 20px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
 
     }
 
@@ -532,34 +582,27 @@ button.dropbtn {
         color: yellow;
         font-size: 15px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin: 0 auto;
     }
 
     .button4 {
         padding: 10px 25px 10px 25px;
-        margin-top: 0px;
         border: none;
         border-radius: 5px;
         background: white !important;
         color: #408AD1 !important;
         font-size: 10px;
         font-weight: 700;
-        margin-left: 0px;
     }
 
     .text4 {
         position: absolute;
         text-align: center;
-        margin-left: -321px;
     }
 
     .text4 p {
         font-size: 17px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
         line-height: 0px;
         letter-spacing: -0.02em;
         color: #652100;
@@ -567,36 +610,31 @@ button.dropbtn {
     }
 
     .text4 h4 {
-        font-size: 25px;
+        font-size: 18px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
         letter-spacing: -0.02em;
         color: #652100;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+        margin: 0 auto;
+        ;
     }
 
     .text4 h5 {
         font-size: 20px;
-        margin-top: 0px;
-        margin-bottom: 17px;
-        margin-left: 0px;
         letter-spacing: -0.02em;
         color: #652100;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+        margin: 0 auto;
     }
 
     .button5 {
-        padding: 15px 15px 12px 10px;
-        margin-top: -12px;
+        padding: 8px 10px;
         text-align: center;
         border: none;
         border-radius: 5px;
         color: white;
         font-size: 10px;
         font-weight: 700;
-        margin-left: 0px;
         letter-spacing: -0.02em;
         background-color: #652100;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
@@ -605,14 +643,11 @@ button.dropbtn {
     .text6 {
         position: absolute;
         text-align: center;
-        margin-left: -321px;
     }
 
     .text6 p {
-        font-size: 17px;
+        font-size: 13px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
         line-height: 0px;
         letter-spacing: -0.02em;
         color: white;
@@ -620,36 +655,30 @@ button.dropbtn {
     }
 
     .text6 h4 {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 12px;
         letter-spacing: -0.02em;
         color: white;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+        margin: 0 auto;
     }
 
     .text6 h5 {
         font-size: 20px;
-        margin-top: 0px;
-        margin-bottom: 17px;
-        margin-left: 0px;
         letter-spacing: -0.02em;
         color: white;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+        margin: 0 auto;
     }
 
     .text6 button {
-        padding: 15px 35px;
-        margin-top: -12px;
+        padding: 8px 10px;
         text-align: center;
         border: none;
         border-radius: 5px;
         color: black;
         font-size: 10px;
         font-weight: 700;
-        margin-left: 0px;
         letter-spacing: -0.02em;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
     }
@@ -657,16 +686,13 @@ button.dropbtn {
     .text7 {
         position: absolute;
         text-align: center;
-        margin-left: -321px;
     }
 
     .text7 h4 {
         color: #253b52;
-        font-size: 25px;
+        font-size: 20px;
+        margin: 0 auto;
         font-weight: bold;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
         letter-spacing: -0.02em;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
     }
@@ -674,24 +700,20 @@ button.dropbtn {
     .text7 h5 {
         color: #253b52;
         font-size: 20px;
-        margin-top: 0px;
-        margin-bottom: 17px;
-        margin-left: 0px;
+        margin: 0 auto;
         letter-spacing: -0.02em;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
     }
 
     .text7 button {
         background-color: #253b52;
-        padding: 15px 15px 12px 10px;
-        margin-top: -12px;
+        padding: 8px 10px;
         text-align: center;
         border: none;
         border-radius: 5px;
         color: white;
         font-size: 10px;
         font-weight: 700;
-        margin-left: 0px;
         letter-spacing: -0.02em;
         text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
     }
@@ -762,6 +784,8 @@ button.dropbtn {
     .my {
         display: flex;
         width: 100%;
+        gap: 0px;
+        justify-content: space-around;
     }
 }
 
@@ -817,7 +841,7 @@ section {
     position: absolute;
     top: 55px;
     font-size: 35px;
-    left: 320px;
+    right: 0;
     width: 48%;
     color: #001a5a;
     letter-spacing: 0.02em;
@@ -832,7 +856,7 @@ section {
     position: absolute;
     top: 55px;
     font-size: 35px;
-    left: 320px;
+    right: 0px;
     width: 48%;
     letter-spacing: 0.02em;
     font-weight: lighter;
@@ -865,7 +889,7 @@ section {
 }
 
 .contain img {
-    width: 390px;
+    width: 100%;
     height: 550px;
     box-shadow: 0px 4px 4px #c8daf5;
 }
@@ -876,6 +900,25 @@ section {
     width: 300px;
     padding-left: 65px;
     padding-top: 40px;
+}
+
+.contain .three1,
+.contain .three2,
+.contain .three4,
+.contain .three3,
+.contain .three5,
+.contain .three6 {
+    position: relative;
+}
+
+.contain .three1 p,
+.contain .three2 p,
+.contain .three4 p,
+.contain .three3 p,
+.contain .three5 p,
+.contain .three6 p {
+    max-width: 100%;
+    padding-top: unset;
 }
 
 .three1 p {
@@ -974,6 +1017,10 @@ ul.tabs li.current {
     padding: 15px;
 }
 
+.img {
+    padding: 10px 15px 0px;
+}
+
 .tab-content .img {
     display: flex;
     width: 90%;
@@ -1061,6 +1108,11 @@ ul.tabs li.current {
 .img img {
     max-width: 100%;
     padding: 40px 6px 0px 21px;
+}
+
+.top .img img {
+    max-width: 100%;
+    padding: 40px 6px 0px 6px;
 }
 
 .middle1 {
@@ -1175,19 +1227,19 @@ ul.tabs li.current {
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     section {
-        width: 97%;
+        width: 100%;
         margin: auto;
         padding: 0;
-        margin-left: 10px;
     }
 
     .tab-content .img img {
         padding: 0px;
-        margin: 38px 9px 0px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .tab-content.current {
@@ -1204,7 +1256,7 @@ ul.tabs li.current {
     }
 
     .img-text p {
-        padding: 0px 10px;
+        padding: 0px 5px;
         font-size: 10px;
     }
 
@@ -1214,6 +1266,7 @@ ul.tabs li.current {
 
     .img1 {
         padding: 0px;
+        font-size: 15px;
     }
 
     .myimg img {
@@ -1222,13 +1275,15 @@ ul.tabs li.current {
     }
 
     .contain img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 
     .mytext {
         text-align: center;
         width: 100%;
         margin: 0 auto;
+        font-size: 14px;
     }
 
     .review_btn_new {
@@ -1244,12 +1299,11 @@ ul.tabs li.current {
         background: #d7e5fa;
         font-weight: 500;
         text-align: center;
-        font-size: 24px;
+        font-size: 17px;
         line-height: 20px;
         letter-spacing: -0.02em;
         color: #26497C;
         justify-content: center;
-        margin-bottom: 20px;
         position: relative;
     }
 
@@ -1257,7 +1311,7 @@ ul.tabs li.current {
         display: block;
         color: rgb(29, 79, 153);
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         position: relative;
         top: 100px;
         font-weight: bold;
@@ -1265,7 +1319,7 @@ ul.tabs li.current {
 
     .hide2 strong {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .stars_old {
@@ -1273,8 +1327,7 @@ ul.tabs li.current {
     }
 
     .contain p {
-        width: 90%;
-        font-size: 23px;
+        font-size: 17px;
         padding: 0px;
         margin: 0px;
     }
@@ -1304,13 +1357,13 @@ ul.tabs li.current {
 
     ul.tabs {
         display: flex;
-        gap: 11px;
-        font-size: 13px;
+        gap: 8px;
+        font-size: 12px;
     }
 
     .button11 {
-        margin-left: 75px;
-        padding: 5px 5px;
+        margin: 0px;
+        padding: 5px 10px;
     }
 
     .tab-content .img {
@@ -1318,23 +1371,43 @@ ul.tabs li.current {
         width: 100%;
         margin: 0px;
         left: 0px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .text p {
+        padding: 0px 5px;
     }
 
     .img-text {
-        width: 87%;
-        height: 270px;
-        padding: 0px 0px;
-        margin: -29px 10px 0px 10px;
+        height: auto;
+        padding: 0px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .img-text h4 {
-        font-size: 15px;
-        padding: 15px 18px 0px;
+        padding: 0px 5px;
+        margin: 0 auto;
+        font-size: 11px;
+    }
+
+    .stars_new {
+        padding: 5px;
+    }
+
+    .review_name_new {
+        font-size: 8px;
+    }
+
+    .xyz {
+        font-size: 20px;
     }
 
     .font {
-        margin-right: 8px;
-        padding-top: 25px;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 10px;
     }
 
     .font strong {
@@ -1366,7 +1439,7 @@ ul.tabs li.current {
         top: 0px;
         left: 0px;
         width: 100%;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .two1 span {
@@ -1374,13 +1447,17 @@ ul.tabs li.current {
         top: 0px;
         left: 0px;
         width: 100%;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .two1 span p {
-        font-size: 22px;
-        margin-top: 10px;
-        margin-left: 0px;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .one1 span p {
+        font-size: 15px;
+        margin: 0px;
     }
 
     .contain {
@@ -1504,6 +1581,7 @@ ul.tabs li.current {
 
     .accordin-item {
         text-align: center;
+        font-size: 7px;
     }
 
     .acccordian-contant {
@@ -1514,7 +1592,9 @@ ul.tabs li.current {
     }
 
     .panel {
-        padding: 0px 20px;
+        padding: 0px 10px;
+        text-align: center;
+        margin: 0px;
     }
 
     .header span {
@@ -1524,6 +1604,12 @@ ul.tabs li.current {
 
     .header h1 {
         text-align: center;
+        font-size: 10px;
+    }
+
+    .images4 img {
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -1551,7 +1637,7 @@ ul.tabs li.current {
 }
 
 input[type="text"] {
-    padding: 10px 30px 10px 20px;
+    padding: 10px 50px 10px 0px;
 }
 
 .but {
@@ -1618,14 +1704,14 @@ input[type="text"] {
     }
 
     .lastfoot p {
-        font-size: 16px;
+        font-size: 14px;
         width: 95%;
         padding-left: 10px;
     }
 
     input[type="text"] {
         margin: auto;
-        padding: 15px 35px 15px 35px;
+        padding: 15px 0px 15px;
     }
 
     .but {
@@ -1664,6 +1750,8 @@ input[type="text"] {
     .end {
         background-color: black;
         color: white;
+        font-size: 10px;
+        gap: 10px;
         width: 100%;
     }
 
