@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
@@ -7,6 +7,7 @@ body {
 .container {
     max-width: 1400px;
     width: 100%;
+    margin: 0 auto;
 }
 
 /* Navbar */
@@ -22,6 +23,7 @@ body {
     cursor: pointer;
     font-size: 15px;
     justify-content: center;
+    left: 0;
 }
 
 .logo {
@@ -125,6 +127,7 @@ button.dropbtn {
 .first_contant {
     background-color: white;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .input {
@@ -140,11 +143,14 @@ button.dropbtn {
     justify-content: flex-end;
 }
 
-.inside {
+.minus,
+.plus {
     border-radius: 4px;
     color: blue;
     border: 1px solid #D4E5FF;
     font-size: 20px;
+    width: 20px;
+    text-align: center;
 }
 
 #cart p {
@@ -153,9 +159,8 @@ button.dropbtn {
 
 .middle_contant {
     background: linear-gradient(180deg, #F5F7FA 0%, rgba(245, 247, 250, 0) 100%);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 8px 0px 0px 0px;
-    padding: 16px 16px 8px;
     font-size: 14px;
     line-height: 17px;
     color: #6E7B8F;
@@ -221,7 +226,13 @@ button.dropbtn {
 
     #cart {
         right: 0;
-        width: 150px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .input {
+        padding: 0px !important;
+        margin: 0px !important;
     }
 
 }
@@ -731,8 +742,7 @@ button.dropbtn {
 
 .middle {
     display: flex;
-    width: 80%;
-    margin: 9px 0px 10px 140px;
+    width: 100%;
     gap: 60px;
     align-items: center;
     justify-content: center;
@@ -740,7 +750,7 @@ button.dropbtn {
 
 .my {
     display: flex;
-    width: 100%;
+    width: 60%;
     gap: 20px;
 }
 
@@ -1357,8 +1367,10 @@ ul.tabs li.current {
 
     ul.tabs {
         display: flex;
-        gap: 8px;
+        gap: 15px;
         font-size: 12px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .button11 {
@@ -1436,17 +1448,17 @@ ul.tabs li.current {
 
     .one1 span {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
+        top: 10px;
+        left: 10px;
+        width: 90%;
         font-size: 15px;
     }
 
     .two1 span {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
+        top: 10px;
+        left: 10px;
+        width: 90%;
         font-size: 15px;
     }
 
@@ -1527,15 +1539,9 @@ ul.tabs li.current {
 
 .acccordian-contant {
     display: flex;
-    padding-left: 80px;
     gap: 40px;
     align-items: center;
     background: #eaedf4;
-}
-
-.images4 img {
-    height: 1470px;
-    width: 400px;
 }
 
 .panel {
@@ -1558,20 +1564,13 @@ ul.tabs li.current {
     color: #1774FF;
     cursor: pointer;
     margin-top: 30px;
-}
-
-.header span {
-    margin-left: 400px;
+    display: flex;
+    gap: 75px;
 }
 
 .panel a {
     color: #1774FF;
     font-weight: bold;
-}
-
-.images4 img {
-    height: 1470px;
-    width: 400px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -1605,6 +1604,8 @@ ul.tabs li.current {
     .header h1 {
         text-align: center;
         font-size: 10px;
+        justify-content: center;
+        gap: 0;
     }
 
     .images4 img {
