@@ -1140,7 +1140,7 @@ ul.tabs li.current {
     padding: 40px 6px 0px 20px;
 }
 
-.top .img img {
+.top .coffee_img img {
     max-width: 100%;
     padding: 40px 6px 0px 6px;
 }
@@ -1520,8 +1520,8 @@ ul.tabs li.current {
         align-items: center;
     }
 
-    .img img {
-        width: 100%;
+    .coffee_img img {
+        width: 95%;
         padding: 40px 0px 0px;
     }
 }
